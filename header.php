@@ -43,16 +43,16 @@
 				endif; ?>
 			</h1>
 		</div>
-
-		<nav class="navbar navbar-default navbar-sticky">
+		
+		<nav id="site-navigation" class="main-navigation navbar navbar-default navbar-sticky" role="navigation">
+			
 			<div class="container-fluid">
 
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
 				</div>
 
-				<div class="navbar-collapse collapse">
-
+				<!-- <div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
 						<li><a href="index.html">Home</a></li>
 						<li><a href="about.html">About</a></li>
@@ -65,19 +65,17 @@
 							</ul>
 						</li>
 						<li class="active"><a href="blog.html">Blog</a></li>
-					</ul>
-				</div><!--/.nav-collapse -->
-
-				<?php wp_nav_menu( array(
-					'theme_location' => 'primary',
-					'menu_id'        => 'primary-menu',
-					'menu_class'     => 'navbar-collapse collapse',
-					'container' 	 => '',
-					'items_wrap' => '<ul id="%1$s" class="nav nav-navbar %2$s">%3$s</ul>'
-				));
-				?>
+					</ul>					
+				</div> --><!--/.nav-collapse -->
+				<?php 
+					wp_nav_menu( array( 'theme_location' => 'primary', 
+						'menu_id' => 'primary-menu',
+						'menu_class' => 'navbar-collapse collapse'		
+					) ); 
+			 	?>
 			</div>
 		</nav>
 	</header>
 
 	<div id="content" class="site-content">
+	

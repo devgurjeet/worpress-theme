@@ -1687,6 +1687,14 @@ footer.entry-meta .meta-in {
   float: left;
   margin: 0 10px 0 0;
 }
+
+
+/* custom Code added by gurjeet */
+.post{
+	text-align: center;
+}
+
+
 /* Max page width
 /////////////////////////////////////////////////////////////////////*/
 @media (min-width: 1200px) {
